@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="jsInPlaceEditor.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".in-place-edit").jsInPlaceEditor({
+      complete: function(callback) {
+        callback(null);
+      }
+    });
+  });
+</script>
+  <meta charset="utf-8">
+  <title>jsInPlaceEditor example page</title>
+  <style>
+    .in-place-edit .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  
+  <div>
+    <span class="in-place-edit">
+      <span class="readonly"><span class="value">1234</span>&nbsp;<a href='#'>edit</a></span>
+      <span class="editable hidden"><input type="text" /><button class="save">Save</button><span class="error hidden"></span></span>
+    </span>
+    <br>
+    <span class="in-place-edit">
+      <span class="readonly"><span class="value">1234</span>&nbsp;<a href='#'>edit</a></span>
+      <span class="editable hidden"><input type="text" /><button class="save">Save</button><span class="error hidden"></span></span>
+    </span>
+    <br>
+    <span class="in-place-edit">
+      <span class="readonly"><span class="value">1234</span>&nbsp;<a href='#'>edit</a></span>
+      <span class="editable hidden"><input type="text" /><button class="save">Save</button><span class="error hidden"></span></span>
+    </span>
+  </div>
+  
+</body>
+</html>
