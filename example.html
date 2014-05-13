@@ -6,7 +6,8 @@
 <script>
   $(document).ready(function() {
     $(".in-place-edit").jsInPlaceEditor({
-      complete: function(callback) {
+      complete: function MyOnComplete(value, callback) {
+	console.log(value);
         callback(null);
       }
     });
